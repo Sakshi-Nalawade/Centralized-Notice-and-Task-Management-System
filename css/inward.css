@@ -1,0 +1,240 @@
+/* ==========================================================
+   INWARD MODULE — Professional Banking Theme
+   ========================================================== */
+
+.inward-page {
+    background: linear-gradient(180deg, #f0f2f5 0%, #e8ebef 100%);
+    min-height: 100%;
+    padding: 16px 10px 28px 10px;
+}
+
+.inward-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.inward-panel::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, #0f766e, #14b8a6, #0f766e);
+}
+
+.inward-panel-body {
+    padding: 20px;
+}
+
+.inward-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.inward-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.inward-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 58px;
+    min-height: 42px;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    transition: all 0.25s ease;
+}
+
+.inward-add-btn:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.inward-table-wrap {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.table-inward-ref {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+.table-inward-ref thead th {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 13px 14px;
+    border: none !important;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.table-inward-ref tbody td {
+    background: #ffffff;
+    padding: 13px 14px;
+    border-top: 1px solid #f1f5f9 !important;
+    vertical-align: top;
+    font-size: 13.5px;
+    color: #334155;
+}
+
+.table-inward-ref tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.table-inward-ref tbody tr:hover td {
+    background: #f0fdf4;
+}
+
+.table-inward-ref tbody tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.table-inward-ref tbody tr:nth-child(even):hover td {
+    background: #f0fdf4;
+}
+
+.inward-actions {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.inward-edit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 82px;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12.5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(59, 130, 246, 0.25);
+    transition: all 0.25s ease;
+}
+
+.inward-edit-btn:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.inward-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 82px;
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12.5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25);
+    transition: all 0.25s ease;
+}
+
+.inward-delete-btn:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.inward-empty {
+    text-align: center;
+    padding: 32px 14px;
+    color: #94a3b8;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* ─── Inward Form Styles ─── */
+.inward-panel .form-control,
+.inward-panel .form-select {
+    min-height: 44px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    font-size: 13.5px;
+    padding: 10px 14px;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inward-panel .form-control:focus,
+.inward-panel .form-select:focus {
+    border-color: #0f766e !important;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1) !important;
+}
+
+.inward-form-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 6px;
+    display: block;
+    letter-spacing: 0.2px;
+}
+
+.inward-form-label .req {
+    color: #dc2626;
+    margin-right: 2px;
+}
+
+.inward-save-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.inward-save-btn:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}

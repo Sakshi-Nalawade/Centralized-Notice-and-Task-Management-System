@@ -1,0 +1,583 @@
+/* ==========================================================
+   CIRCULAR MODULE — Professional Banking Theme
+   ========================================================== */
+
+/* ─── Page & Panel ─── */
+.circular-ref-page {
+    background: linear-gradient(180deg, #f0f2f5 0%, #e8ebef 100%);
+    min-height: 100%;
+    padding: 16px 10px 28px 10px;
+}
+
+.circular-ref-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.circular-ref-panel::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, #dc2626, #ef4444, #f87171);
+}
+
+.circular-ref-panel-body {
+    padding: 20px 20px 22px 20px;
+}
+
+/* ─── Title Row ─── */
+.circular-ref-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.circular-ref-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* ─── Search & Filters ─── */
+.circular-ref-search {
+    display: flex;
+    align-items: center;
+}
+
+.circular-ref-search input {
+    width: 230px;
+    min-height: 42px;
+    border: 1.5px solid #d1d5db;
+    border-right: none;
+    border-radius: 8px 0 0 8px !important;
+    background: #fff;
+    box-shadow: none !important;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    transition: border-color 0.2s ease;
+}
+
+.circular-ref-search input:focus {
+    border-color: #0f766e;
+}
+
+.circular-ref-search button {
+    width: 48px;
+    min-height: 42px;
+    border: 1.5px solid #d1d5db;
+    border-left: none;
+    background: #f8fafc;
+    border-radius: 0 8px 8px 0;
+    color: #475569;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.circular-ref-search button:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.circular-ref-filter-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.circular-ref-filter-row .dept-select {
+    width: 260px;
+    min-height: 42px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px !important;
+    background: #fff;
+    box-shadow: none !important;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    transition: border-color 0.2s ease;
+}
+
+.circular-ref-filter-row .dept-select:focus {
+    border-color: #0f766e;
+}
+
+.circular-ref-date-box {
+    width: 160px;
+    position: relative;
+}
+
+.circular-ref-date-box input {
+    width: 100%;
+    min-height: 42px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px !important;
+    background: #fff;
+    box-shadow: none !important;
+    padding: 10px 38px 10px 12px;
+    font-size: 13.5px;
+    transition: border-color 0.2s ease;
+}
+
+.circular-ref-date-box input:focus {
+    border-color: #0f766e;
+}
+
+.circular-ref-date-box i {
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    color: #64748b;
+    pointer-events: none;
+}
+
+/* ─── Icon Buttons ─── */
+.circular-ref-icon-btn {
+    width: 48px;
+    min-height: 42px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.circular-ref-search-btn {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+}
+
+.circular-ref-search-btn:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.circular-ref-reset-btn {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1.5px solid #d1d5db;
+}
+
+.circular-ref-reset-btn:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.circular-ref-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    transition: all 0.25s ease;
+    letter-spacing: 0.3px;
+}
+
+.circular-ref-add-btn:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.circular-ref-add-btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* ─── Table ─── */
+.circular-ref-table-wrap {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.table-circular-ref {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+.table-circular-ref thead th {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 13px 14px;
+    border: none !important;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.table-circular-ref tbody td {
+    background: #ffffff;
+    padding: 13px 14px;
+    border-top: 1px solid #f1f5f9 !important;
+    vertical-align: top;
+    font-size: 13.5px;
+    color: #334155;
+}
+
+.table-circular-ref tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.table-circular-ref tbody tr:hover td {
+    background: #f0fdf4;
+}
+
+.table-circular-ref tbody tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.table-circular-ref tbody tr:nth-child(even):hover td {
+    background: #f0fdf4;
+}
+
+.circular-ref-title-text {
+    font-size: 14.5px;
+    line-height: 1.4;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+/* ─── Action Buttons ─── */
+.circular-ref-actions {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.circular-ref-edit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 82px;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12.5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(59, 130, 246, 0.25);
+    transition: all 0.25s ease;
+}
+
+.circular-ref-edit:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.circular-ref-delete {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 82px;
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12.5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25);
+    transition: all 0.25s ease;
+}
+
+.circular-ref-delete:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.circular-ref-empty {
+    text-align: center;
+    padding: 32px 14px;
+    color: #94a3b8;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* ─── Add/Edit Circular Page ─── */
+.add-circular-page,
+.edit-circular-page {
+    background: linear-gradient(180deg, #f0f2f5 0%, #e8ebef 100%);
+    min-height: 100%;
+    padding: 16px 10px 28px 10px;
+}
+
+.add-circular-panel,
+.edit-circular-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.add-circular-panel::before,
+.edit-circular-panel::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, #0ea5e9, #38bdf8, #0ea5e9);
+}
+
+.add-circular-title,
+.edit-circular-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    padding: 16px 20px 14px 20px;
+    border-bottom: 1px solid #f1f5f9;
+    background: #f8fafc;
+    letter-spacing: 0.5px;
+}
+
+.add-circular-body,
+.edit-circular-body {
+    padding: 22px 22px 18px 22px;
+}
+
+.add-label,
+.edit-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 6px;
+    letter-spacing: 0.2px;
+}
+
+.add-label .req,
+.edit-label .req {
+    color: #dc2626;
+}
+
+.add-circular-form .form-control,
+.add-circular-form .form-select,
+.edit-circular-form .form-control,
+.edit-circular-form .form-select {
+    min-height: 44px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    font-size: 13.5px;
+    padding: 10px 14px;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-circular-form .form-control:focus,
+.add-circular-form .form-select:focus,
+.edit-circular-form .form-control:focus,
+.edit-circular-form .form-select:focus {
+    border-color: #0f766e !important;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1) !important;
+}
+
+.add-circular-form textarea.form-control,
+.edit-circular-form textarea.form-control {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* ─── Upload Box ─── */
+.upload-doc-box {
+    border: 2px dashed #cbd5e1;
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    min-height: 240px;
+    padding: 24px 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    transition: border-color 0.2s ease;
+}
+
+.upload-doc-box:hover {
+    border-color: #0f766e;
+}
+
+.upload-doc-icon {
+    font-size: 52px;
+    color: #94a3b8;
+    margin-bottom: 14px;
+}
+
+.upload-doc-text {
+    font-size: 15px;
+    color: #64748b;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.upload-doc-box .form-control {
+    margin-bottom: 10px;
+}
+
+.upload-btn-ref {
+    display: inline-block;
+    background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.25);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.upload-btn-ref:hover {
+    background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.save-btn-ref {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.save-btn-ref:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.save-btn-ref i {
+    margin-right: 6px;
+}
+
+/* ─── Document Actions ─── */
+.doc-action-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.doc-btn-view {
+    display: inline-block;
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.doc-btn-view:hover {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.doc-btn-remove {
+    display: inline-block;
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.doc-btn-remove:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.pdf-preview-box {
+    background: #1e293b;
+    border: 1px solid #475569;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.pdf-preview-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #fff;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1100px) {
+    .circular-ref-title-row,
+    .circular-ref-filter-row {
+        align-items: stretch;
+    }
+
+    .circular-ref-search input,
+    .circular-ref-filter-row .dept-select,
+    .circular-ref-date-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .upload-doc-box {
+        min-height: 200px;
+        margin-top: 10px;
+    }
+
+    .pdf-preview-box {
+        height: 260px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,23 @@
+# Local configuration
+.env
+.env.*
+includes/config.php
+
+# Local IDE settings
+nbproject/private/
+
+# Uploaded documents and user data
+uploads/*
+!uploads/.gitkeep
+
+# Database backups and data
+db/*.sql
+*.sql
+
+# Logs and temporary files
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+# IDE project files
+nbproject/

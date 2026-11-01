@@ -1,0 +1,261 @@
+/* ==========================================================
+   OUTWARD MODULE — Professional Banking Theme
+   ========================================================== */
+
+.outward-page {
+    background: linear-gradient(180deg, #f0f2f5 0%, #e8ebef 100%);
+    min-height: 100%;
+    padding: 16px 10px 28px 10px;
+}
+
+.outward-panel {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.outward-panel::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background: linear-gradient(90deg, #7c3aed, #a78bfa, #7c3aed);
+}
+
+.outward-panel-body {
+    padding: 20px;
+}
+
+.outward-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.outward-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.outward-add-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 58px;
+    min-height: 42px;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #fff !important;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    transition: all 0.25s ease;
+}
+
+.outward-add-btn:hover {
+    background: linear-gradient(135deg, #047857 0%, #059669 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.outward-table-wrap {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.table-outward-ref {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
+.table-outward-ref thead th {
+    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 13px 14px;
+    border: none !important;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.table-outward-ref tbody td {
+    background: #ffffff;
+    padding: 13px 14px;
+    border-top: 1px solid #f1f5f9 !important;
+    vertical-align: top;
+    font-size: 13.5px;
+    color: #334155;
+}
+
+.table-outward-ref tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.table-outward-ref tbody tr:hover td {
+    background: #f5f3ff;
+}
+
+.table-outward-ref tbody tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.table-outward-ref tbody tr:nth-child(even):hover td {
+    background: #f5f3ff;
+}
+
+.outward-actions {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.outward-edit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 82px;
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12.5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(59, 130, 246, 0.25);
+    transition: all 0.25s ease;
+}
+
+.outward-edit-btn:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.outward-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 82px;
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12.5px;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(239, 68, 68, 0.25);
+    transition: all 0.25s ease;
+}
+
+.outward-delete-btn:hover {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.outward-empty {
+    text-align: center;
+    padding: 32px 14px;
+    color: #94a3b8;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* ─── Outward Form Styles ─── */
+.outward-panel .form-control,
+.outward-panel .form-select {
+    min-height: 44px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    font-size: 13.5px;
+    padding: 10px 14px;
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.outward-panel .form-control:focus,
+.outward-panel .form-select:focus {
+    border-color: #7c3aed !important;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1) !important;
+}
+
+.outward-form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.outward-form-label .req {
+    color: #ef4444;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.outward-save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-width: 120px;
+    min-height: 44px;
+    padding: 10px 28px;
+    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
+    transition: all 0.25s ease;
+    margin-top: 8px;
+}
+
+.outward-save-btn:hover {
+    background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+}
+
+.outward-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #7c3aed;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.outward-back-link:hover {
+    color: #6d28d9;
+    text-decoration: underline;
+}

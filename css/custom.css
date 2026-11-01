@@ -1,0 +1,263 @@
+/* ==========================================================
+   GLOBAL LAYOUT — Professional Banking Theme
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    background-color: #f0f2f5 !important;
+    font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#layoutSidenav_content {
+    background: linear-gradient(180deg, #f0f2f5 0%, #e8ebef 100%);
+}
+
+.container-fluid {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+/* =========================
+   TOP NAVBAR
+========================= */
+.sb-topnav {
+    background: linear-gradient(135deg, #0f766e 0%, #115e59 100%) !important;
+    height: 58px;
+    min-height: 58px;
+    box-shadow: 0 2px 12px rgba(15, 118, 110, 0.2) !important;
+    border: none !important;
+}
+
+.sb-topnav .navbar-brand {
+    color: #ffffff !important;
+    font-size: 18px;
+    font-weight: 700;
+    width: 225px;
+    padding-left: 18px;
+    letter-spacing: 0.5px;
+}
+
+.sb-topnav .nav-link,
+.sb-topnav .navbar-brand,
+.sb-topnav .topbar-bank-name,
+.sb-topnav .topbar-user-text {
+    color: #ffffff !important;
+}
+
+.topbar-bank-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: 24px;
+    white-space: nowrap;
+    opacity: 0.92;
+    letter-spacing: 0.3px;
+}
+
+.topbar-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.topbar-user i {
+    font-size: 17px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sb-sidenav {
+    background: linear-gradient(180deg, #111827 0%, #1a2332 100%) !important;
+}
+
+.sb-sidenav-menu {
+    padding-top: 0 !important;
+}
+
+.sidebar-profile {
+    background: linear-gradient(135deg, #0f2027 0%, #1a2f3a 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+}
+
+.sidebar-profile .profile-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0f766e 0%, #14b8a6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(15, 118, 110, 0.3);
+}
+
+.sidebar-profile-info {
+    line-height: 1.2;
+}
+
+.sidebar-profile-info .name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sidebar-profile-info .status {
+    color: #34d399;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.sb-sidenav-menu-heading {
+    color: #6b8294 !important;
+    font-size: 10.5px !important;
+    text-transform: uppercase;
+    padding: 16px 16px 8px 16px !important;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+
+.sb-sidenav .nav-link {
+    color: #c9d5de !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 16px !important;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+    letter-spacing: 0.2px;
+}
+
+.sb-sidenav .nav-link .sb-nav-link-icon {
+    color: #8ba3b5 !important;
+    min-width: 22px;
+    transition: color 0.2s ease;
+}
+
+.sb-sidenav .nav-link:hover {
+    background: rgba(15, 118, 110, 0.12) !important;
+    color: #ffffff !important;
+    border-left: 3px solid #14b8a6;
+}
+
+.sb-sidenav .nav-link:hover .sb-nav-link-icon {
+    color: #14b8a6 !important;
+}
+
+.sb-sidenav .nav-link.active {
+    background: rgba(15, 118, 110, 0.15) !important;
+    color: #ffffff !important;
+    border-left: 3px solid #14b8a6;
+}
+
+.sb-sidenav .nav-link.active .sb-nav-link-icon {
+    color: #14b8a6 !important;
+}
+
+/* =========================
+   SIDEBAR DROPDOWN / NESTED
+========================= */
+.sb-sidenav .sb-sidenav-collapse-arrow {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    transition: transform 0.25s ease;
+    color: #6b8294 !important;
+    font-size: 12px;
+}
+
+.sb-sidenav .nav-link.collapsed .sb-sidenav-collapse-arrow {
+    transform: rotate(-90deg);
+}
+
+.sb-sidenav .sb-sidenav-menu-nested {
+    background: rgba(0, 0, 0, 0.15);
+    border-left: 2px solid rgba(20, 184, 166, 0.3);
+    margin-left: 16px !important;
+    padding: 4px 0;
+    border-radius: 0 0 6px 6px;
+}
+
+.sb-sidenav .sb-sidenav-menu-nested .nav-link {
+    font-size: 13px !important;
+    padding: 9px 12px 9px 14px !important;
+    color: #a3b8c8 !important;
+    border-left: none !important;
+    transition: all 0.2s ease;
+}
+
+.sb-sidenav .sb-sidenav-menu-nested .nav-link i {
+    font-size: 11px;
+    opacity: 0.7;
+    width: 18px;
+}
+
+.sb-sidenav .sb-sidenav-menu-nested .nav-link:hover {
+    color: #ffffff !important;
+    background: rgba(15, 118, 110, 0.18) !important;
+    padding-left: 18px !important;
+}
+
+.sb-sidenav .sb-sidenav-menu-nested .nav-link.active {
+    color: #14b8a6 !important;
+    background: rgba(15, 118, 110, 0.22) !important;
+    font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+    .topbar-bank-name {
+        display: none;
+    }
+}
+
+/* =========================
+   TOPBAR USER DROPDOWN
+========================= */
+.topbar-user-dropdown {
+    min-width: 190px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 32px rgba(15, 23, 42, 0.18);
+    padding: 8px 0;
+    margin-top: 10px;
+    background: #ffffff;
+}
+
+.topbar-user-dropdown .dropdown-item {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 18px;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.topbar-user-dropdown .dropdown-item:hover {
+    background: #f0fdf4;
+    color: #0f766e;
+}
+
+.topbar-user-dropdown .dropdown-divider {
+    margin: 6px 0;
+    border-color: #f1f5f9;
+}
+
+.topbar-user-dropdown .text-danger:hover {
+    color: #dc2626 !important;
+    background: #fef2f2;
+}
